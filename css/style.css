@@ -1,0 +1,156 @@
+/*-------
+RESET
+----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------
+typography
+--------------*/
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    line-height: 1.6;
+  }
+  h1{
+    font-size: 40px;
+}
+  
+/*-------------
+COMMON
+--------------*/
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+/*---------------
+    buttons
+-----------------*/
+button{
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.white-btn{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    
+}
+.black-btn{
+    color: inherit;
+    background-color: black;
+    border: black 1px solid;
+    margin-left: 15px;
+}
+
+/*-----------------
+header
+------------------*/
+.header-top {
+    padding: 16px 0px;
+    justify-content: center;
+    background-color: #2a5ee8;
+}
+.header-top .logo{
+    text-align: left;
+}
+.header-top .main-nav{
+    text-align: center;
+    flex-grow: 1;
+
+}
+.header-top .log-in{
+    text-align: right;
+}
+.header-top .logo, .header-top .log-in{
+    width: 20%;
+}
+.header-top > .container > *{
+    align-content: center;
+}
+.main-nav ul{ 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 12px;
+}
+.header-bottom{
+    background-image: url(../img/jumbo.png);
+    padding: 150px;
+    background-size: cover;
+    background-position: center;
+}   
+.header-bottom .hero p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.hero{
+    max-width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.hero-buttons i{
+    margin-right: 5px;
+}
+/*-------------
+    MAIN
+---------------*/
+
+.container > .col-big{
+    width: 60%;
+}
+.container > .col-small{
+    width: 40%;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section:nth-child(2n){
+    background-color: #d3d3d3;
+}
+footer{
+    background-color: #23272a;
+}
+.footer-top .container > .col-small{
+    width: 30%;
+}
+.footer-top .container > .col-big{
+    display: flex;
+    width: 70%;
+}
+.col-int{
+    width: 25%;
+}
+.footer-top > .container{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.footer-bottom > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.footer-bottom .logo, .button{
+    padding: 6px;
+}
+.footer-bottom{
+    border-bottom: 1px #9a9a9a solid;
+}
